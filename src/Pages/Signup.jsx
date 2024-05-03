@@ -78,15 +78,13 @@ function Signup() {
             value={passwordValue}
           />
           {passwordValue.length > 0 && (
-           
-              <FontAwesomeIcon
-                icon={!showPassword ? faEye : faEyeSlash}
-                className="w-[20px] aspect-square cursor-pointer flex items-center justify-center absolute right-0 top-2/4  translate-y-[-50%]"
-                onClick={() => {
-                  setShowPassword(!showPassword);
-                }}
-              />
-            
+            <FontAwesomeIcon
+              icon={!showPassword ? faEye : faEyeSlash}
+              className="w-[20px] aspect-square cursor-pointer flex items-center justify-center absolute right-0 top-2/4  translate-y-[-50%]"
+              onClick={() => {
+                setShowPassword(!showPassword);
+              }}
+            />
           )}
         </span>
         <span className="w-full relative mb-2  ">
@@ -113,7 +111,7 @@ function Signup() {
           Already have an account?{" "}
           <Link
             to="/login"
-            className="pl-2 text-[#8B0000] outline-none hover:underline focus:underline"
+            className="pl-2 text-[#FFD700]  outline-none hover:underline focus:underline"
           >
             Login{" "}
           </Link>{" "}
